@@ -1,5 +1,68 @@
-.login-box{
-    text-align: center;
-    margin-left: 45px;
-    margin-top: 110px;
+*{
+    
 }
+
+body{
+  
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color:rgb(97, 214, 122);
+    width: 30%;
+    margin-left: 36%;
+    margin-top: 10%;
+    box-shadow: 10px 20px 30px black ;
+    border: 12px;
+     
+}
+
+.container{
+    width: 350px;
+    padding: 0 15px 0 15px;
+   
+}
+
+h1{
+    color:black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 1;
+}
+
+.input{
+    height: 40px;
+    width: 125%;
+    padding: 0 0 0 45px;
+  
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.submit{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 90px;
+    width: 70px;
+    margin-bottom: 10px;
+    background-color: blue;
+    color: aliceblue;
+    
+
+}
+
+.input-field{
+    margin-right: 90px;
+}
+
+
+
+
