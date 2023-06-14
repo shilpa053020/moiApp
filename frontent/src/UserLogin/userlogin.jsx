@@ -1,9 +1,13 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom"
 import "./userlogin.css"
 
 
 function Login() {
-
+  const navigate = useNavigate()
+  const usernav = () => {
+      navigate("/dash")
+  }
 
   return (
 
@@ -21,7 +25,7 @@ function Login() {
       </div>
       <br></br>
       <div className='input-field'>
-        <input type='submit' className='submit' value="Login" />
+        <input type='submit' className='submit' value="Login" onClick={usernav}/>
       </div>
     </div>
   )
