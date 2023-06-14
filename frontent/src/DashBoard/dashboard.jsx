@@ -1,16 +1,32 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./dashboard.css"
 
-const dashboard = () => {
+
+
+const DashBoard = () => {
+  const navigate = useNavigate()
+  const dashNav = () => {
+    navigate("/function")
+  }
+  const ReportNav = () => {
+    navigate("/report")
+  }
+
   return (
-    <div class="row">
-    <div class="col-sm-4">
-        <button  className="button">
-            <img className="image" alt="add student" />
-        </button>
-        <p className="para"> Add Student </p>
-    </div>
-    </div>
+    
+      
+      
+        <div class="btn">
+          <button className="btn1" onClick={dashNav} >Function</button>
+      
+          <button className="btn2" onclick={ReportNav}>Report</button>
+        </div>
+      
+      
+  
+
   )
 }
 
-export default dashboard
+export default DashBoard;
