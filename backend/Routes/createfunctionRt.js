@@ -1,5 +1,5 @@
 import Express from "express"
-import { createfunction,getfunction } from "../controllers/createfunctionRt.js";
+import { createfunction,getfunction } from "../controllers/createfunctionCt.js";
 
 
 const route = Express.Router();
