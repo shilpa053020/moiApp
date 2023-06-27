@@ -2,8 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import  functionRt from "./Routes/functionRt.js"
 import loginRt from "./Routes/loginRt.js"
+import eventRt from "./Routes/functionRt.js"
 
 
 
@@ -14,8 +14,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/Moi",functionRt)
-app.use("/MOI",loginRt)
+app.use("/Moi",loginRt)
+app.use("/Moi",eventRt)
 
 
 

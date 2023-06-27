@@ -1,8 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./report.css"
-
-
 
 const Report =()=>{
   
@@ -15,4 +12,5 @@ const Report =()=>{
 
       )
     }
+    
 export default Report;

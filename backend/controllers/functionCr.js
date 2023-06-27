@@ -1,10 +1,18 @@
-import fun from  "../Schema/function.js" 
-export const newfunction = async(req,res)=>{
-     const newfun = new fun({
-           Function_Id:req.body.Function_Id,
-           FunctionName:req.body.FunctionName
-     })
-     await newfun.save();
-     console.log("created new function");
-     res.status(200).json(newfun)
+import event from "../Schema/function.js"
+
+
+export const eventnew = async (req,res)=>{
+      const even = new event ({
+            Function_Id:req.body.Function_Id,
+            FunctionName:req.body.FunctionName
+      })
+      await even.save();
+      res.status(200).json(even)
+      console.log("new function created")
+}
+
+export const getevent = async(req,res)=>{
+      const getall = await event.find();
+      res.status(200).json(getall)
+      console.log("all event");
 }
