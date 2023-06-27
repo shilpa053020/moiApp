@@ -6,10 +6,6 @@ import  functionRt from "./Routes/functionRt.js"
 import loginRt from "./Routes/loginRt.js"
 import createRt from"./Routes/createfunctionRt.js"
 
-
-
-
-
 dotenv.config();
 const app = express();
 
