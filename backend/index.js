@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import loginRt from "./Routes/loginRt.js"
 import eventRt from "./Routes/functionRt.js"
+import createRt from "./Routes/createfunctionRt.js"
 
 
 
@@ -16,6 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/Moi",loginRt)
 app.use("/Moi",eventRt)
+app.use("/Moi",createRt)
 
 
 

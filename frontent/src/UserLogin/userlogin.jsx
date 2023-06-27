@@ -1,18 +1,19 @@
 import React, {useState} from 'react'
-
+import {useNavigate} from "react-router-dom"
 import "./userlogin.css"
-import axios from "axios"
+
 
 
 function Login() {
   const [name,setuser] = useState("")
   const [password,setpassword] = useState("");
      
-  const navigate = useNavigate()
-  const usernav = () => {
-      navigate("/dash")
+  const navigate=useNavigate()
+  const usernav=()=>{
+    navigate("/dash")
+  }
         
-    }
+    
    
   return (
 
@@ -40,7 +41,7 @@ function Login() {
       </div>
       <br></br>
       <div className='input-field'>
-        <button type='submit'>login</button>
+        <button type='submit' className='submit' value="login" onClick={usernav}>login</button>
       </div>
     </div>
   )
