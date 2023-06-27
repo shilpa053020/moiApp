@@ -4,7 +4,7 @@ const functn = new mongoose.Schema({
     
       Function_Id:{
          type:Number,
-         required:true
+        
       },
       FunctionName:{
           type:String,

@@ -20,7 +20,7 @@ const DashBoard = () => {
         <div class="btn">
           <button className="btn1" onClick={dashNav} >Function</button>
       
-          <button className="btn2" onclick={ReportNav}>Report</button>
+          <button className="btn2" onClick={ReportNav}>Report</button>
         </div>
       
       

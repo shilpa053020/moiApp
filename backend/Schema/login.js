@@ -1,19 +1,21 @@
 import mongoose from "mongoose";
 
+
 const userlogin = new mongoose.Schema({
     User_Id:{
-        type:Number,
-        required:true
+        type:Number
     },
     Name:{
-        type:"string",
+        type:String,
         required:true
     },
     PassWord:{
-        type:"string",
+        type:String,
         required:true
-    },
+    }
     
 })
+
+
 
 export default mongoose.model("loginschema",userlogin);

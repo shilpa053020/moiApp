@@ -10,7 +10,7 @@ const CreateFunction = () => {
     return (
         <form>
             <div class="func">
-                <h2>CreateFunction</h2>
+                <h2>CASH GIFT</h2>
                 
 
                 <div class="form3">
