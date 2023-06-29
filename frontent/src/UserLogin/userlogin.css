@@ -2,9 +2,11 @@
 
 body{
   
-    background-size: cover;
-    background-attachment: fixed;
-  
+    
+    background: url(img5.jpg);
+    background-size:cover;
+    width: 100%;
+    background-repeat: no-repeat;  
 }
 
 .box{
@@ -16,10 +18,10 @@ body{
     background-color:skyblue;
     width: 30%;
     margin-left: 36%;
-    margin-top: 10%;
+    margin-top: 175px;
     box-shadow: 10px 20px 30px black ;
     border: 12px;
-     
+    
 }
 
 .container{

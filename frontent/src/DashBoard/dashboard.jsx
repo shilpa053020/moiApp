@@ -16,7 +16,7 @@ const DashBoard = () => {
   return (
     
       
-      
+        
         <div class="btn">
           <button className="btn1" onClick={dashNav} >Function</button>
       
@@ -24,7 +24,7 @@ const DashBoard = () => {
         </div>
       
       
-  
+        
 
   )
 }
