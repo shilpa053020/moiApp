@@ -5,7 +5,7 @@ const route = express.Router();
 
 
 route.post("/newfunction",eventnew)
-
+   
 route.get("/allevent" , getevent)
 
 

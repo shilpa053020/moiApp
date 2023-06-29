@@ -10,10 +10,11 @@ const CreateFunction = () => {
     return (
         <form>
             <div class="func">
-                <h2>CASH GIFT</h2>
+               
+                <h2 class="rose">CASH GIFT</h2>
                 
 
-                <div class="form3">
+                <div  class="form3 rose">
                 <div className="row">
                     <div className="col-3"></div>
                     <div className="form-group">
@@ -31,8 +32,9 @@ const CreateFunction = () => {
                 <div className="col-3">
                     <label>Mobile Number:</label><br/>
                     <input
-                        type="number"
-                        className="form-control"></input>
+                        type="number" 
+                        
+                        className="form-control" ></input>
                 </div>
                 </div>
 
@@ -63,6 +65,7 @@ const CreateFunction = () => {
 
 
             </div>
+            
             </div>
 
         </form>
