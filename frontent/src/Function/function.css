@@ -1,15 +1,16 @@
 .item{
     text-align: center;
-    width: 700px;
+    width: 590px;
     /* margin: 250px auto; */
-    padding: 10px 20px ;
+    padding: 2px 4px ;
     font-weight: 700;
     margin-top: 200px;
-    margin-left: 300px;
-    background:skyblue;
-    border-radius: 10px;
+    margin-left: 280px;
+    background:#f4cae0;
+    border-radius: 15px;
     box-shadow: 10px 20px 30px black ;
 }
+
 
 .btn3{
     text-align: center;
@@ -19,10 +20,11 @@
     border-radius: 8px;
     font-size: 1.5rem;
     color: white;
-    padding: 10px 10px;
-    margin-top: 250px;
-    margin-top: -1px;
-    background-color: rgb(8, 136, 179);
+    padding: 5px 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(29, 85, 16);
+    cursor: pointer;
 }
 
 .form{
@@ -44,10 +46,3 @@ input{
    
 }
 
-#function{
-    padding: 10px 10px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 8px;
-    border: 1px solid black;
-}

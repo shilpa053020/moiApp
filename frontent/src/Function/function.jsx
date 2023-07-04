@@ -1,43 +1,70 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React,{useState} from "react"
+import { useNavigate} from "react-router-dom"
 import "./function.css"
+import axios from "axios"
+
 
 
 
 const Function = () => {
-    const navigate = useNavigate()
-    const functionnav = () => {
-        navigate("/createfunction")
+
+    const [Name, setName]=useState("")
+    const[weds, setweds]=useState("")
+  
+    const navigate = useNavigate();
+   
+    
+    const functionSubmit = (e) => {
+        e.preventDefault();
+        const data = {
+            FunctionName:Name,
+            BrideandBrideGroomsName:weds
+        }
+        axios.post("http://localhost:5000/Moi/newfunction",data)
+       
+        .then((result) => {
+         if(result){
+              navigate("/Createfunction")
+            
+         }
+        })
+        .catch((error) => { 
+        alert(error)
+        });
+ 
+       
     }
+
+   
+
+
 
     return (
         <form>
             <div class="item">
                 <h1>Function</h1>
 
-
-                <div>
-                    <div class="form">
+                     <div class="form">
                         <div className="row">
                             <div className="col-3"></div>
                             <label>FunctionName:</label>
-                            <select id="function" name="function">
-                                <option value="wedding">WEDDING</option>
-                                <option value="EAR">EAR PIERCING CEREMONY</option>
-                                <option value="fiat">PUBERTY CEREMONY</option>
-                                <option value="audi">ENGAGEMENT</option>
-                            </select>
+                             <input type="text"  className="form-control"
+                              onChange={(e)=>{setName(e.target.value)}} 
+                             value={Name}></input>
 
-                            <input type="text" class="form-control"></input>
+                            <label>Bride and BrideGrooms Name:</label>
+                             <input type="text" className="form-control" 
+                               onChange={(e)=>{setweds(e.target.value)}}
+                              value={weds} ></input>
 
                         </div>
                     </div>
                     <br/>
 
-                    <button className="btn3" onClick={functionnav}>CREATE</button>
+                <button class="btn3" onClick={(e)=>functionSubmit(e)}>Create</button>
                  
                 </div>
-            </div>
+            
         </form>
     )
 }

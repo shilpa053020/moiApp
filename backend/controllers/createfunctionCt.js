@@ -13,14 +13,16 @@ export const createfunction = async(req,res)=>{
     await crtfun.save();
     console.log("created new function");
     res.status(200).json(crtfun)
-    console.log("get the details")
+   
+   
 
  
 }
 
 export const getfunction = async(req,res)=>{
         const getAll = await create.find();                                                                                                                                                                                                                                                                                                    
-        res.status(200).json(getAll)  
+        res.status(200).json(getAll) 
+        console.log("get the details") 
 
 }
 
