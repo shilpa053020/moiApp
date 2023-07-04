@@ -1,16 +1,31 @@
 import React, {useState} from 'react'
 import {useNavigate} from "react-router-dom"
 import "./userlogin.css"
+import axios from "axios"
 
-
-
-function Login() {
+const Login= () =>{
   const [name,setuser] = useState("")
   const [password,setpassword] = useState("");
      
   const navigate=useNavigate()
-  const usernav=()=>{
-    navigate("/dash")
+  const handleSubmit=(e)=>{
+        e.preventDefault();
+        const data = {
+            Name:name,
+            PassWord:password
+      }
+      axios.post("http://localhost:5000/Moi/create",data)
+      
+      .then((result) => {
+         if(result.data){
+          navigate("/dash")
+          
+         }
+      })
+      .catch((error) => { 
+        alert(error)
+      });
+ 
   }
         
     
@@ -41,7 +56,7 @@ function Login() {
       </div>
       <br></br>
       <div className='input-field'>
-        <button type='submit' className='submit' value="login" onClick={usernav}>login</button>
+        <button type='submit' className='submit' value="login" onClick={(e)=>handleSubmit(e)}>login</button>
       </div>
     </div>
   )

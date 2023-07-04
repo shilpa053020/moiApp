@@ -9,7 +9,10 @@ const functn = new mongoose.Schema({
       FunctionName:{
           type:String,
           required:true
-      }
-
+      },
+      BrideandBrideGroomsName:{
+         type:String,
+         required:true
+    }
 })
 export default mongoose.model("newfunction",functn);

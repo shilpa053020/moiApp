@@ -2,7 +2,7 @@
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: url(rose.jpg); 
+    background: url(C:\Users\Admin\Desktop\moiApp\frontent\src\img\img5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,7 +10,7 @@
 
 }
 div  .rose{
-  margin-left: 300px;
+  margin-left: -50px;
 
 }
 
@@ -24,13 +24,14 @@ div  .rose{
 }
 
 .btn4{
-  background-color: rgb(8, 136, 179);
+  background-color: rgb(117, 21, 182);
   font-size: 1.5rem;
   margin-top: 10px;
   border-radius: 8px;
   padding: 8px;
-  border: 2px solid  rgb(8, 136, 179);;
+  border: 2px solid rgb(117, 21, 182);
   color: white;
+  cursor: pointer;
 }
 .form-control{
   border-radius: 8px;

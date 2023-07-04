@@ -7,19 +7,20 @@ import Report from "./Report/report.jsx"
 import Function from "./Function/function";
 import Userlog from "./UserLogin/userlogin";
 
+
 const App=()=>{
   return(
-    <div class="app">
+   
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Userlog/>}/>
       <Route path="/dash" element={<Dash/>}/>
       <Route path="/function" element={<Function/>}/>
-      <Route path="/createfunction" element={<CreateFunc/>}/>
+      <Route path="/Createfunction" element={<CreateFunc/>}/>
       <Route path="/report" element={<Report/>}/>
     </Routes>
     </BrowserRouter>
-    </div>
+   
   )
 }
 

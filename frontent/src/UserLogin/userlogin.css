@@ -3,13 +3,14 @@
 body{
   
     
-    background: url(img5.jpg);
+    background: url(C:\Users\Admin\Desktop\moiApp\frontent\src\img\img5.jpg);
     background-size:cover;
     width: 100%;
     background-repeat: no-repeat;  
 }
 
 .box{
+  
     display: flex;
     justify-content: center;
     align-items: center;

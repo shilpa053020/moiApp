@@ -1,11 +1,34 @@
-import React from "react";
-
+import React,{ useState } from "react";
 import "./createfunction.css";
+import axios from "axios"
 
 
 
 const CreateFunction = () => {
-    
+    const [Name, setName]=useState("")
+    const [Mobilenumber, setNumber]=useState("")
+    const [Address, setAddress]=useState("")
+    const [Moipayment, setPayment]=useState("")
+
+    const Submitfun = (e)=> {
+        e.preventDefault();
+        const data = {
+            Name:Name,
+            Mobilenumber:Mobilenumber,
+            Address:Address,
+            Moipayment:Moipayment
+    }
+
+    axios.post("http://localhost:5000/Moi/createfun",data)
+    .then((result) => {
+        if(result){
+          console.log(result)
+        }
+       })
+       .catch((error) => { 
+       alert(error)
+       })
+    }
 
     return (
         <form>
@@ -20,7 +43,9 @@ const CreateFunction = () => {
                     <div className="form-group">
                         <label>Name:</label><br/>
                         <input type="text"
-                            class="form-control">
+                            class="form-control"
+                            onChange={(e)=>{setName(e.target.value)}}
+                            value={Name}>
                         </input>
                     </div>
                 </div>
@@ -33,8 +58,9 @@ const CreateFunction = () => {
                     <label>Mobile Number:</label><br/>
                     <input
                         type="number" 
-                        
-                        className="form-control" ></input>
+                        onChange={(e)=>{setNumber(e.target.value)}}
+                        className="form-control"
+                        value={Mobilenumber} ></input>
                 </div>
                 </div>
 
@@ -43,7 +69,9 @@ const CreateFunction = () => {
                     <label>Address:</label><br/>
                     <input
                         type="text"
-                        className="form-control"></input>
+                        className="form-control"
+                        onChange={(e)=>{setAddress(e.target.value)}}
+                        value={Address}></input>
                 </div>
                 </div>
             
@@ -53,11 +81,13 @@ const CreateFunction = () => {
                     <div className="form-group">
                         <label>MoiPayment:</label><br/>
                         <input type="Number"
-                            class="form-control">
+                            class="form-control"
+                            onChange={(e)=>{setPayment(e.target.value)}}
+                            value={Moipayment}>
                         </input>
                     </div>
                 </div><br></br>
-                <button class="btn4"> PAY MOI</button>
+                <button class="btn4" onClick={(e)=>Submitfun(e)}> PAY MOI</button>
                
                 </div>
 
@@ -73,3 +103,4 @@ const CreateFunction = () => {
 }
 
 export default CreateFunction;
+
