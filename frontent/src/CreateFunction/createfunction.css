@@ -2,7 +2,7 @@
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: url(C:\Users\Admin\Desktop\moiApp\frontent\src\img\img5.jpg);
+    background: url("../CreateFunction//img5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
