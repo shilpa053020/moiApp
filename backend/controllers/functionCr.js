@@ -4,8 +4,8 @@ import event from "../Schema/function.js"
 export const eventnew = async (req,res)=>{
       const even = new event ({
             Function_Id:req.body.Function_Id,
-            FunctionName:req.body.FunctionName,
-            BrideandBrideGroomsName:req.body.BrideandBrideGroomsName,
+           
+            BrideGroomsandBrideName:req.body.BrideGroomsandBrideName,
       })
       await even.save();
       res.status(200).json(even)

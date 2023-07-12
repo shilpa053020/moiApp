@@ -6,11 +6,7 @@ const functn = new mongoose.Schema({
          type:Number,
         
       },
-      FunctionName:{
-          type:String,
-          required:true
-      },
-      BrideandBrideGroomsName:{
+      BrideGroomsandBrideName:{
          type:String,
          required:true
     }
