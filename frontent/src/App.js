@@ -1,11 +1,12 @@
 import React from "react";
-import "../src/App.css";
+
 import {BrowserRouter,Routes, Route} from "react-router-dom";
-import CreateFunc from "./CreateFunction/createfunction";
-import Dash from "./DashBoard/dashboard";
+import CreateFunc from "./CreateFunction/createfunction.jsx";
+import Dash from "./DashBoard/dashboard.jsx";
 import Report from "./Report/report.jsx"
-import Function from "./Function/function";
-import Userlog from "./UserLogin/userlogin";
+import Function from "./Function/function.jsx";
+import Userlog from "./UserLogin/userlogin.jsx";
+import Table from "./Table/table.jsx"
 
 
 const App=()=>{
@@ -18,6 +19,11 @@ const App=()=>{
       <Route path="/function" element={<Function/>}/>
       <Route path="/Createfunction" element={<CreateFunc/>}/>
       <Route path="/report" element={<Report/>}/>
+      <Route path="/table" element={<Table/>}/>
+
+      
+     
+
     </Routes>
     </BrowserRouter>
    

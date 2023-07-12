@@ -8,7 +8,7 @@ import axios from "axios"
 
 const Function = () => {
 
-    const [Name, setName]=useState("")
+   
     const[weds, setweds]=useState("")
   
     const navigate = useNavigate();
@@ -17,7 +17,6 @@ const Function = () => {
     const functionSubmit = (e) => {
         e.preventDefault();
         const data = {
-            FunctionName:Name,
             BrideandBrideGroomsName:weds
         }
         axios.post("http://localhost:5000/Moi/newfunction",data)
@@ -47,13 +46,8 @@ const Function = () => {
                      <div class="form">
                         <div className="row">
                             <div className="col-3"></div>
-                            <label>FunctionName:</label>
-                             <input type="text"  className="form-control"
-                              onChange={(e)=>{setName(e.target.value)}} 
-                             value={Name}></input>
-
                             <label>Bride and BrideGrooms Name:</label>
-                             <input type="text" className="form-control" 
+                             <input type="text" class="in"  
                                onChange={(e)=>{setweds(e.target.value)}}
                               value={weds} ></input>
 

@@ -7,7 +7,7 @@ import "./dashboard.css"
 const DashBoard = () => {
   const navigate = useNavigate()
   const dashNav = () => {
-    navigate("/function")
+    navigate("/table")
   }
   const ReportNav = () => {
     navigate("/report")
@@ -17,7 +17,7 @@ const DashBoard = () => {
     
       
         
-        <div class="btn">
+        <div className="btns">
           <button className="btn1" onClick={dashNav} >Function</button>
       
           <button className="btn2" onClick={ReportNav}>Report</button>

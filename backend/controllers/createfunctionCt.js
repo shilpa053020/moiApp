@@ -10,13 +10,11 @@ export const createfunction = async(req,res)=>{
         Moipayment:req.body.Moipayment
 
     })
-    await crtfun.save();
+    await crtfun.save(); 
     console.log("created new function");
-    res.status(200).json(crtfun)
-   
+    res.status(200).json(crtfun)({message: "user login created successfully"})
    
 
- 
 }
 
 export const getfunction = async(req,res)=>{
@@ -25,5 +23,3 @@ export const getfunction = async(req,res)=>{
         console.log("get the details") 
 
 }
-
-export default create;

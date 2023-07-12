@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import loginRt from "./Routes/loginRt.js"
 import eventRt from "./Routes/functionRt.js"
-import createRt from "./Routes/createfunctionRt.js"
+import createRt from "./Routes/createfunctionRt.js" 
 
 
 
@@ -37,4 +37,4 @@ const connect = async()=>{
 app.listen(5000,()=>{
     connect();
     console.log("server is running on port number 5000");
-})
+}) 
