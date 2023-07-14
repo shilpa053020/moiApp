@@ -1,9 +1,9 @@
-/* *{
+ *{
     margin:0;
     padding:0
 }
 .table{
-    margin-top: 40px;
+    margin-top: 80px;
     padding-right: 200px;
     padding-left: 300px;
  
@@ -12,16 +12,21 @@
 .funcr{
     cursor: pointer;
 }
- */
+
 
  .crtfun{
     float: right;
     margin-right: 10px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: -50px;
     
  
  }
+ table, th, td {
+    border:  25px solid ;
+    border-collapse: collapse;
+  }
+
 
 
 

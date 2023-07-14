@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0
+}
+
+.table{
+   
+    width: 800px;
+    margin-left:210px;
+    text-align: center;
+}
+
+.view{
+    margin: auto 355px;
+    color: aliceblue;
+    float: left;
+   
+    background-color: #1e461f;
+    padding: 20px 15px;
+    border: none;
+}
+table, th, td {
+    border:  25px solid ;
+    border-collapse: collapse;
+  }
