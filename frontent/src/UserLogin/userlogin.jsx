@@ -56,6 +56,9 @@ const Login= () =>{
       </div>
       <br></br>
       <div className='input-field'>
+        <button type='submit' class ='btn default' value="text" onClick={(e)=>handleSubmit(e)}>CREATE NEW ACCOUNT</button>
+      </div>
+      <div className='input-field'>
         <button type='submit' className='submit' value="login" onClick={(e)=>handleSubmit(e)}>login</button>
       </div>
     </div>
