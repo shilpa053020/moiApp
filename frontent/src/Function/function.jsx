@@ -17,7 +17,7 @@ const Function = () => {
     const functionSubmit = (e) => {
         e.preventDefault();
         const data = {
-            BrideandBrideGroomsName:weds
+            BrideGroomsandBrideName:weds
         }
         axios.post("http://localhost:5000/Moi/newfunction",data)
        

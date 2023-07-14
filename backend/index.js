@@ -6,18 +6,16 @@ import loginRt from "./Routes/loginRt.js"
 import eventRt from "./Routes/functionRt.js"
 import createRt from "./Routes/createfunctionRt.js" 
 
-
-
-
-
 dotenv.config();
 const app = express();
+
 
 app.use(cors());
 app.use(express.json());
 app.use("/Moi",loginRt)
 app.use("/Moi",eventRt)
 app.use("/Moi",createRt)
+
 
 
 
