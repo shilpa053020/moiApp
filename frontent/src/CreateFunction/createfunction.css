@@ -11,7 +11,7 @@
    
 }
 .rose{
-  margin-right: 60px;
+  margin-right: 120px;
   margin-left: 80px;
   margin-top: 30px;
 }
@@ -23,25 +23,20 @@
   border-color: black;
   margin-left: 500px;
   margin-bottom: 50px;
-  margin-right: -400px;
+  margin-right: -450px;
 }
 
-input{
-  margin-left: 80px;
-  margin-left: 40px;
-}
 
-label{
-  margin-left: 70px;
-  
-}
+
+
 
 .name{ 
    width: 24%;
 }
 
 .labname{
-  margin-right: 970px;
+  margin-right: 1010px;
+ 
 }
 
 .btn4{
@@ -53,8 +48,8 @@ label{
   border-radius: 20px;
   width: 25%;
   margin-top: 90px;
-  margin-right: 300px;
-  margin-left: -278px;
+  margin-right: 350px;
+  margin-left: -325px;
 
  
 }
