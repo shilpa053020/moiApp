@@ -10,13 +10,15 @@ const CreateFunction = () => {
     const [Address, setAddress]=useState("")
     const [Moipayment, setPayment]=useState("")
 
+   
     const Submitfun = (e)=> {
         e.preventDefault();
         const data = {
             Name:Name,
             Mobilenumber:Mobilenumber,
             Address:Address,
-            Moipayment:Moipayment
+            Moipayment:Moipayment,
+               
     }
 
     axios.post("http://localhost:5000/Moi/createfun",data)
@@ -37,18 +39,19 @@ const CreateFunction = () => {
                 <h2 class="rose">CASH GIFT</h2>
                 
 
-                <div  class="form3 rose">
-                <div className="row">
+                <div  class="form3">
+               
                     <div className="col-3"></div>
                     <div className="form-group">
-                        <label>Name:</label><br/>
+                        <label class="labname">Name:</label><br/>
                         <input type="text"
-                            class="form-control"
+                            class="form-control name"
+
                             onChange={(e)=>{setName(e.target.value)}}
                             value={Name}>
                         </input>
+                    
                     </div>
-                </div>
                 
             
 
@@ -86,12 +89,12 @@ const CreateFunction = () => {
                             value={Moipayment}>
                         </input>
                     </div>
+                   
                 </div><br></br>
+                      <br></br>
                 <button class="btn4" onClick={(e)=>Submitfun(e)}> PAY MOI</button>
                
                 </div>
-
-              
 
 
             </div>

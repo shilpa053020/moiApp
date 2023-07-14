@@ -1,40 +1,64 @@
-/* .func{
+.func{
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: url("../CreateFunction//img5.jpg");
+    background: url("../CreateFunction/img5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 
-
+   
 }
-div  .rose{
-  margin-left: -50px;
-
+.rose{
+  margin-right: 60px;
+  margin-left: 80px;
+  margin-top: 30px;
 }
-
 
 .form3{
-    text-align: center;
-    margin-top: 45px;
-    font-weight: 700;
-    padding: 20px;   
-    
+  text-align: center;
+  font-weight: 700;
+  margin-top: 70px;
+  border-color: black;
+  margin-left: 500px;
+  margin-bottom: 50px;
+  margin-right: -400px;
+}
+
+input{
+  margin-left: 80px;
+  margin-left: 40px;
+}
+
+label{
+  margin-left: 70px;
+  
+}
+
+.name{ 
+   width: 24%;
+}
+
+.labname{
+  margin-right: 970px;
 }
 
 .btn4{
   background-color: rgb(117, 21, 182);
   font-size: 1.5rem;
-  margin-top: 10px;
-  border-radius: 8px;
-  padding: 8px;
   border: 2px solid rgb(117, 21, 182);
   color: white;
   cursor: pointer;
-}
-.form-control{
-  border-radius: 8px;
+  border-radius: 20px;
+  width: 25%;
+  margin-top: 90px;
+  margin-right: 300px;
+  margin-left: -278px;
+
+ 
 }
 
- */
+
+
+  
