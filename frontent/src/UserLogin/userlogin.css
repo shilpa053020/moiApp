@@ -1,71 +1,110 @@
 body{
-  
-    
-    background: url("../UserLogin/img5.jpg");
-    background-size:cover;
-    width: 100%;
-    background-repeat: no-repeat;  
+    background: url("../UserLogin/world.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.box{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    flex-direction: column;
-    background-color:skyblue;
-    width: 30%;
-    margin-left: 36%;
-    margin-top: 175px;
-    box-shadow: 10px 20px 30px black ;
-    border: 12px;
-    
+
+div.box1{
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    width:500px;
+    /* background-color: #ef9656; */
+    /* background-color: #DDB771; */
+    /* background-color: #073B3A; */
+    background: url(gem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px  #ccc;
+
+
+    border: 2px #ccc;
+    border-radius: 15px;
+    padding: 10px 20px 30px;
 }
 
-.container{
-    width: 350px;
-    padding: 0 15px 0 15px;
+.input-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Adjust the width as needed */
+}
+
+
+input.small-input{
+  width: 250px; /* Set the desired width of the input box */
+  border-radius: 15px;
+  
+}
+
+
+.login{
+    text-align:center;
+    /* color:#F3F7F0;  */
+    color: #fff;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+button.btnlogin{
+ 
+  background-color: #fff;
+  border: none;
+  color: #42b72a;
+  margin: auto 155px;
+  padding: 10px 50px ;
+  font-weight: bolder;
+  margin-bottom: 15px; 
+  font-size: 16px;  
+  border-radius: 25px;
+  transition: font-size 0.3s ease;
+}
+
+button.btnlogin:hover{
+  font-size: 20px;
+
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    
+  }
+
+  a:active{
+    color: #1877f2;
+  }
+
+  .forbtn{
+    color: #fff;
+    margin-left: 150px;
+    border-radius: 5px;
    
-}
+  }
 
-h1{
-    color:black;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 10px 1;
-}
-
-.input{
-    height: 40px;
-    width: 125%;
-    padding: 0 0 0 45px;
-  
-    border-radius: 25px;
-    margin-right: 10px;
-}
-
-.submit{
+  .createnew{
+    background-color: #fff;
     border: none;
-    border-radius: 10px;
-    height: 40px;
-    margin-left: 280px;
-   
-    width: 70px;
-    margin-bottom: 10px;
-    background-color:rgb(8, 136, 179);
-    color: aliceblue;
+    border-radius: 6px;
+    color:#e99d67;
+    color: #1877f2 ;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 15px;
     cursor: pointer;
-    
+    text-decoration: none;
+    margin-top:10px ;
+    margin-left:130px;
+    transition: font-size 0.3s ease;
+  }
 
-}
-
-.input-field{
-    margin-right: 90px;
-}
-
-
-
-
-
-
+  .createnew:hover{
+   color:#42b72a;
+   font-size: 20px;
+  }

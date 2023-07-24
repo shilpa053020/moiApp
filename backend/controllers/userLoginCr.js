@@ -20,7 +20,7 @@ export const newuser = async (req,res)=>{
         console.log("created new user");
         res.status(200).send("new user created successfully")
         }catch(err){
-        next(err)
+      
         }
 
 }
