@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./dashboard.css"
+import "./dashboard.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -14,17 +15,17 @@ const DashBoard = () => {
   }
 
   return (
-    
+       
+        <div className="container1">
+       <div class="background-wrapper">
+       
+          <button className="btn btn-primary btn-block btn1" onClick={dashNav}>FUNCTION</button>
+          
       
-        
-        <div className="btns">
-          <button className="btn1" onClick={dashNav} >Function</button>
-      
-          <button className="btn2" onClick={ReportNav}>Report</button>
-        </div>
-      
-      
-        
+          <button className="btn btn-primary btn-block btn1" onClick={ReportNav}>REPORT</button>
+          </div>  
+          </div>  
+          
 
   )
 }

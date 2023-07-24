@@ -31,9 +31,11 @@ useEffect(() => {
     
   return (
     <>
-    
-
-    <table className="table table-bordered table table-danger">
+    <div class="table-container3">
+    <div class="report1">
+      <h3 class="ttr3">REPORT</h3>
+    </div>
+    <table className="ttr table-container4">
         <thead >
             <tr>
                 <th>Event Name</th>
@@ -49,7 +51,7 @@ useEffect(() => {
                 <td>{user.BrideGroomsandBrideName}</td>
                 <td>
                   <button
-                    className="btn btn-success"
+                    className="btn btn-primary create7"
                     onClick={viewnav}
                   >View
                   </button>
@@ -64,7 +66,8 @@ useEffect(() => {
         
         
         </table>
-
+        </div>
+        
      
         </>
     );   

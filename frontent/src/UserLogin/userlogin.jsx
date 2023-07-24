@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import {useNavigate} from "react-router-dom"
 import "./userlogin.css"
 import axios from "axios"
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 const Login= () =>{
   const [name,setuser] = useState("")
@@ -31,38 +34,28 @@ const Login= () =>{
     
    
   return (
-
-    <div className='box'>
-      <div className='container'>
-        <h1>Login </h1>
-      </div>
-
-      <div className='input-field'>
-        <input type='text'
-          className='input'
-          placeholder='Username'
-          onChange={(e)=>{setuser(e.target.value)}}
-          value={name}
-          />
-      </div>
-      <br></br>
-      <div className='input-field'>
-        <input type='password'
-          className='input'
-          placeholder='Password'
-          onChange={(e)=>{setpassword(e.target.value)}}
-          value={password}
-          />
-      </div>
-      <br></br>
-      <div className='input-field'>
-        <button type='submit' class ='btn default' value="text" onClick={(e)=>handleSubmit(e)}>CREATE NEW ACCOUNT</button>
-      </div>
-      <div className='input-field'>
-        <button type='submit' className='submit' value="login" onClick={(e)=>handleSubmit(e)}>login</button>
-      </div>
-    </div>
+    
+        <div className="d-flex justify-content-center align-items-center vh-100">
+        <div className="container box1">
+          <h2 class="login">Sign In</h2><br/>
+          <form>
+            <div className="form-group input-container1">
+            <div class="input-container">
+              <input type="text"  className="form-control small-input center-placeholder" id="username" placeholder="username" onChange={(e)=>{setuser(e.target.value)}}  value={name}/>
+            </div><br></br>
+            <div className="form-group input-container1">
+              <input type="password" className="form-control small-input center-placeholder" id="password" placeholder="password"  onChange={(e)=>{setpassword(e.target.value)}}  value={password}/><br/>
+            </div>
+            </div>
+            <button type="submit" className="btn btn-primary btnlogin"  onClick={(e)=>handleSubmit(e)} value="login" >Login</button><br></br>
+            
+            <button class="createnew" onClick={(e)=>handleSubmit(e)}  value="text" >Create new account</button>
+         
+          </form>
+        </div>
+        </div>
+       
   )
-}
+};
 
 export default Login

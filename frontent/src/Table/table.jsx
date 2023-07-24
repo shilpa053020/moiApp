@@ -30,30 +30,33 @@ useEffect(() => {
     
   return (
     <>
-    <div className="crtfun">
-    <button type="button" className="btn btn-warning" onClick={createfun}>CREATE FUNCTION</button>
-    </div>
-
-    <table className="table table-bordered table table-danger">
-        <thead >
-            <tr>
-                <th>Event Name</th>
-                <th>payment</th>
-            </tr>
-           
-        </thead>
-        <tbody>
-          {data.length > 0 ? (
+   
+          <div class=" mt-4 table-container1">
+          <h3 class="tab3">EVENT PAYMENTS</h3>
+          <div class="mt-2">
+            <button class="btn btn-primary create5" onClick={createfun} >CREATE FUNCTION</button>
+        </div>
+          
+        <table class="mt-3 ttb table-container2" >
+            <thead>
+                <tr>
+                    <th scope="col">EVENT NAME</th>
+                    <th scope="col">PAYMENT</th>
+                </tr>
+            </thead>
+            <tbody>
+            {data.length > 0 ? (
             data.map((user) => (
-              <tr key={user._id} >
+              <tr  key={user._id} >
                 <td>{user.BrideGroomsandBrideName}</td>
-                <td>
-                  <button
-                    className="btn btn-success"
-                    onClick={functionnav}
-                  >payMoi
-                  </button>
-                </td>
+              
+               
+                    <td>
+                       
+                        <button class="btn btn-primary create6" onClick={functionnav}>Paymoi</button>
+                  </td>
+                
+
                
                 </tr>
           ))
@@ -64,7 +67,11 @@ useEffect(() => {
        
                  
         </table>
+        
+        </div>
+        
         </>
+
     );   
 };
 

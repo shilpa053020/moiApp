@@ -1,6 +1,7 @@
 import React,{ useState } from "react";
 import "./createfunction.css";
 import axios from "axios"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -33,75 +34,38 @@ const CreateFunction = () => {
     }
 
     return (
-        <form>
-            <div class="func">
-               
-                <h2 class="rose">CASH GIFT</h2>
-                
+        
+<div class="container3">
+  <div class="container justify-content-center mt-5">
+    <div class="background-color3">
+        <h1 class="text-center h1">CASH GIFT</h1>
+    <form  onSubmit={Submitfun} >
+      <div class="form-group input-container2 frm1">
+        <label for="name" class="tt3">Name</label>
+        <input type="text" class="form-control input-container2" id="name" placeholder="Enter your name" onChange={(e)=>{setName(e.target.value)}} value={Name} ></input>
+      </div>
 
-                <div  class="form3">
-               
-                    <div className="col-3"></div>
-                    <div className="form-group">
-                        <label class="labname">Name:</label><br/>
-                        <input type="text"
-                            class="form-control name"
+      <div class="form-group input-container2 frm1">
+        <label for="mobile" class="tt3">Mobile Number</label>
+        <input type="tel" class="form-control input-container2" id="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required onChange={(e)=>{setNumber(e.target.value)}}  value={Mobilenumber} ></input>
+      </div>
 
-                            onChange={(e)=>{setName(e.target.value)}}
-                            value={Name}>
-                        </input>
-                    
-                    </div>
-                
-            
+      <div class="form-group input-container2 frm1">
+        <label for="address" class="tt3">Address</label>
+        <textarea class="form-control input-container2" id="address" rows="3" placeholder="Enter your address"  onChange={(e)=>{setAddress(e.target.value)}}   value={Address} ></textarea>
+      </div>
 
-               
-            <div className="row">
-                <div className="col-3">
-                    <label>Mobile Number:</label><br/>
-                    <input
-                        type="number" 
-                        onChange={(e)=>{setNumber(e.target.value)}}
-                        className="form-control"
-                        value={Mobilenumber} ></input>
-                </div>
-                </div>
-
-                <div className="row">
-                <div className="col-3">
-                    <label>Address:</label><br/>
-                    <input
-                        type="text"
-                        className="form-control"
-                        onChange={(e)=>{setAddress(e.target.value)}}
-                        value={Address}></input>
-                </div>
-                </div>
-            
-           
-            <div className="row">
-                <div className="col-3">
-                    <div className="form-group">
-                        <label>MoiPayment:</label><br/>
-                        <input type="Number"
-                            class="form-control"
-                            onChange={(e)=>{setPayment(e.target.value)}}
-                            value={Moipayment}>
-                        </input>
-                    </div>
-                   
-                </div><br></br>
-                      <br></br>
-                <button class="btn4" onClick={(e)=>Submitfun(e)}> PAY MOI</button>
-               
-                </div>
-
-
-            </div>
-            
-            </div>
-
-        </form>
+      <div class="form-group input-container2 frm1">
+        <label for="payment" class="tt3">Payment</label>
+        <input class="form-control" id="payment" placeholder="Enter your amount" onChange={(e)=>{setPayment(e.target.value)}} value={Moipayment} ></input>  
+      </div>
+      <div class="text-center mt-3">
+      <button type="submit" class="btn btn-primary create2">Pay Moi</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
     )
 }
 
