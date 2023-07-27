@@ -7,7 +7,7 @@ export const eventnew = async (req,res)=>{
       })
       await even.save();
       res.status(200).json(even)
-      console.log("new function created")
+      console.log("new function created") 
 }
 
 export const getevent = async(req,res)=>{

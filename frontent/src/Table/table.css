@@ -15,11 +15,11 @@ button.create5{
     font-size: 1em;
     margin: auto;
     /* background-color:#F58F29; */
-    background-color:#FF6978;;
+    background-color:gold;
     font-weight: bold;
     border-radius: 10px;
-    border: 5px solid #FF6978;
-    box-shadow: 1px 2px 3px #ccc;
+    border: 5px solid gold;
+    box-shadow: 1px 2px 3px whitesmoke;
     transition: font-size 0.3s ease;
 }
 
@@ -37,15 +37,17 @@ table.ttb{
 .table-container1 table td,
 .table-container1 table th {
 
-  color: #161032; /* Change this to the appropriate text color for better visibility inside the table cells */
-
+  color:white;
+   /* Change this to the appropriate text color for better visibility inside the table cells */
+  border-color: white;
+ 
   padding: 10px;
   font-weight: bold;
   font-size: 1.5em;
 }
 
 .table-container1 table th{
-    color:#FF6978;
+    color:gold;
     
     font-size: 2em;
 }
@@ -60,11 +62,17 @@ button.create6{
   border-radius: 15px;
   border: 5px solid #fff;
   box-shadow: 1px 2px 3px #fff;
+  transition: font-size 0.3s ease;
+ 
  
 }
 
+button.create6:hover{
+  font-size: 24px;
+  
+}
 .table-container2 {
-    background:url(hts.jpg);
+    background:url(sart.jpg);
     background-size:cover; /* Adjust as needed to control image sizing */
     background-repeat: no-repeat;
     width: 200%;

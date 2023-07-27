@@ -1,5 +1,5 @@
 body{
-    background: url("../UserLogin/world.jpg");
+    background: url(gem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ div.box1{
     /* background-color: #ef9656; */
     /* background-color: #DDB771; */
     /* background-color: #073B3A; */
-    background: url(gem.jpg);
+    background: url(hhh.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,7 +100,7 @@ button.btnlogin:hover{
     cursor: pointer;
     text-decoration: none;
     margin-top:10px ;
-    margin-left:130px;
+    margin-left:140px;
     transition: font-size 0.3s ease;
   }
 
