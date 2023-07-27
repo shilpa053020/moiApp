@@ -44,7 +44,7 @@ const Function = () => {
       <div class="col-md-4">
         <form>
           <div class="form-group form1">
-            <label for="username" class="in0 mb-2">Bride and BrideGrooms Name:</label>
+            <label for="username" class="in0 mb-2">EVENT NAME:</label>
             <input type="text" class="form-control in1" id="username" placeholder="Type Name" onChange={(e)=>{setweds(e.target.value)}} value={weds} ></input>
           </div>
           <div class="text-center mt-3">

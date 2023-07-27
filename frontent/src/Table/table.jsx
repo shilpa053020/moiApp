@@ -32,7 +32,7 @@ useEffect(() => {
     <>
    
           <div class=" mt-4 table-container1">
-          <h3 class="tab3">EVENT PAYMENTS</h3>
+          <h3 class="tab3">SELECT EVENT</h3>
           <div class="mt-2">
             <button class="btn btn-primary create5" onClick={createfun} >CREATE FUNCTION</button>
         </div>

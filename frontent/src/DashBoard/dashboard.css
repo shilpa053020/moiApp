@@ -45,7 +45,7 @@ button.btn2:hover{
 
 .background-wrapper {
   /* background-color: #C2F9BB;Set the background color for the wrapper */
-  background:url(gems.jpg);
+  background:transparent;
    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
