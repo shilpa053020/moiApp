@@ -6,6 +6,7 @@ import Dash from "./DashBoard/dashboard.jsx";
 import Report from "./Report/report.jsx"
 import Function from "./Function/function.jsx";
 import Userlog from "./UserLogin/userlogin.jsx";
+import {ToastContainer} from "react-toastify"
 import Table from "./Table/table.jsx"
 
 
@@ -20,11 +21,21 @@ const App=()=>{
       <Route path="/Createfunction" element={<CreateFunc/>}/>
       <Route path="/report" element={<Report/>}/>
       <Route path="/table" element={<Table/>}/>
-
+     
       
      
 
     </Routes>
+    <ToastContainer  position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"/>
     </BrowserRouter>
    
   )
