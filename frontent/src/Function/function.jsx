@@ -2,6 +2,7 @@ import React,{useState} from "react"
 import { useNavigate} from "react-router-dom"
 import "./function.css"
 import axios from "axios"
+import { toast } from 'react-toastify';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -24,11 +25,31 @@ const Function = () => {
         .then((result) => {
          if(result){
               navigate("/Createfunction")
+              toast("🦄 Event Created Successfully!", {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+               
+                } );
             
          }
         })
         .catch((error) => { 
-        alert(error)
+          toast.error('🦄 Please Try Again !', {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
         });
  
        

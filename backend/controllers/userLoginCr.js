@@ -20,7 +20,7 @@ export const newuser = async (req,res)=>{
         console.log("created new user");
         res.status(200).send("new user created successfully")
         }catch(err){
-      
+            res.status(404).json("Something Went Wrong")
         }
 
 }
@@ -36,17 +36,17 @@ export const getall = async(req,res)=>{
 export const login =  async(req,res)=>{
     try{
      const user = await userlogin.findOne({ Name:req.body.Name})
-     if (!user) return res.send(false)
+     if (!user) return res.status(200).json(false)
     const isPasswordCorrect = await bcrypt.compare(
             req.body.PassWord,
             user.PassWord  
     );
     
-     if(!isPasswordCorrect) return res.send(false)
-    return res.send(true)
+     if(!isPasswordCorrect) return res.status(403).json("Wrong Password")
+    return res.status(200).json(true)
     
      }catch(err) {
-      res.send(err);
+      return res.status(404).json(err);
      }
 }   
  

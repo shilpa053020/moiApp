@@ -2,6 +2,7 @@ import React,{ useState } from "react";
 import "./createfunction.css";
 import axios from "axios"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { toast } from 'react-toastify';
 
 
 
@@ -26,10 +27,21 @@ const CreateFunction = () => {
     .then((result) => {
         if(result){
           console.log(result)
+          toast("🦄  Payment Done Successfully!", {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+           
+            } );
         }
        })
        .catch((error) => { 
-       alert(error)
+        alert(error)
        })
     }
 
@@ -41,22 +53,22 @@ const CreateFunction = () => {
         <h1 class="text-center h1">CASH GIFT</h1>
     <form  onSubmit={Submitfun} >
       <div class="form-group input-container2 frm1">
-        <label for="name" class="tt3">Name</label>
+        <label for="name" class="tt3">Name :</label>
         <input type="text" class="form-control input-container2" id="name" placeholder="Enter your name" onChange={(e)=>{setName(e.target.value)}} value={Name} ></input>
       </div>
 
       <div class="form-group input-container2 frm1">
-        <label for="mobile" class="tt3">Mobile Number</label>
+        <label for="mobile" class="tt3">Mobile Number :</label>
         <input type="tel" class="form-control input-container2" id="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required onChange={(e)=>{setNumber(e.target.value)}}  value={Mobilenumber} ></input>
       </div>
 
       <div class="form-group input-container2 frm1">
-        <label for="address" class="tt3">Address</label>
+        <label for="address" class="tt3">Address :</label>
         <textarea class="form-control input-container2" id="address" rows="3" placeholder="Enter your address"  onChange={(e)=>{setAddress(e.target.value)}}   value={Address} ></textarea>
       </div>
 
       <div class="form-group input-container2 frm1">
-        <label for="payment" class="tt3">Payment</label>
+        <label for="payment" class="tt3">Payment :    </label>
         <input class="form-control" id="payment" placeholder="Enter your amount" onChange={(e)=>{setPayment(e.target.value)}} value={Moipayment} ></input>  
       </div>
       <div class="text-center mt-3">

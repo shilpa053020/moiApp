@@ -16,6 +16,7 @@ h1.h1{
 label.tt3{
   display: block; /* Display the label as a block element */
   margin-bottom: 10px;
+  
 
 }
 .input-container2{
@@ -23,11 +24,7 @@ label.tt3{
   width: 300px;
   margin: 0 auto;
   margin-bottom: 10px;
- 
-
-  
-  
-  
+     
 }
 .input-container2:active{
   color:red;
@@ -41,13 +38,13 @@ label.tt3{
 }
 
 .frm1 label {
-  width: 200px;
+  width: 150px;
   margin-right: 10px;
   
 }
 
 .frm1.input-container2{
-  width: calc(100% - 150px); /* Increase the input box width */
+  width: calc(100% - 200px); /* Increase the input box width */
   
 }
 
