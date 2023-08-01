@@ -1,13 +1,14 @@
 import React from "react";
 
 import {BrowserRouter,Routes, Route} from "react-router-dom";
-import CreateFunc from "./CreateFunction/createfunction.jsx";
+import CreateFunc from "./PayMoidetails/paymoidetails.jsx";
 import Dash from "./DashBoard/dashboard.jsx";
 import Report from "./Report/report.jsx"
 import Function from "./Function/function.jsx";
 import Userlog from "./UserLogin/userlogin.jsx";
 import {ToastContainer} from "react-toastify"
-import Table from "./Table/table.jsx"
+import Table from "./FunctionTable/table.jsx";
+import ViewMois from "./Report/ViewMois.jsx";
 
 
 const App=()=>{
@@ -21,11 +22,9 @@ const App=()=>{
       <Route path="/Createfunction" element={<CreateFunc/>}/>
       <Route path="/report" element={<Report/>}/>
       <Route path="/table" element={<Table/>}/>
-     
+      <Route path="/Viewmoi" element={<ViewMois/>}/>
       
-     
-
-    </Routes>
+      </Routes>
     <ToastContainer  position="top-right"
         autoClose={1500}
         hideProgressBar={false}

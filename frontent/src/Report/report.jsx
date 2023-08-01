@@ -5,8 +5,8 @@ import "./report.css"
 const Report = () => {
     const navigate = useNavigate()
     const[fun,setfun]=useState([]);
-    const viewnav = () =>{
-        navigate("/viewnav")
+    const viewmoi = (user) =>{
+        navigate("/Viewmoi",{state:user})
     }
     //const createfun = () =>{
       //  navigate("/function")
@@ -47,12 +47,12 @@ useEffect(() => {
         <tbody>
           {fun.length > 0 ? (
             fun.map((user) => (
-              <tr key={user._id} >
+              <tr key={user.function_id} >
                 <td>{user.BrideGroomsandBrideName}</td>
                 <td>
                   <button
                     className="btn btn-primary create7"
-                    onClick={viewnav}
+                    onClick={()=>viewmoi(user)}
                   >View
                   </button>
                 </td>
