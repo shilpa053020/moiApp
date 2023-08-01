@@ -1,14 +1,22 @@
 import mongoose from "mongoose";
+import autoIncrement from "mongoose-auto-increment";
 
 const functn = new mongoose.Schema({
     
-      Function_Id:{
-         type:Number,
-        
-      },
       BrideGroomsandBrideName:{
          type:String,
+         unique: true,
          required:true
-    }
+    },
+
 })
-export default mongoose.model("newfunction",functn);
+
+autoIncrement.initialize(mongoose.connection)
+functn.plugin(autoIncrement.plugin,{
+   model:"New Function",
+   field: "function_id", 
+   startAt :201,
+   incrementBy : 1  
+ 
+})
+export default mongoose.model("newfunction",functn)

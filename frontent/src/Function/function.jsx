@@ -14,7 +14,7 @@ const Function = () => {
   
     const navigate = useNavigate();
    
-    
+    console.log(weds);
     const functionSubmit = (e) => {
         e.preventDefault();
         const data = {
@@ -23,8 +23,8 @@ const Function = () => {
         axios.post("http://localhost:5000/Moi/newfunction",data)
        
         .then((result) => {
-         if(result){
-              navigate("/Createfunction")
+              console.log(result);
+              navigate("/table")
               toast("🦄 Event Created Successfully!", {
                 position: "top-right",
                 autoClose: 1500,
@@ -37,12 +37,13 @@ const Function = () => {
                
                 } );
             
-         }
+      
         })
         .catch((error) => { 
-          toast.error('🦄 Please Try Again !', {
+          console.log(error);
+          toast.error('🦄 Please Try Again Function Name is Already Created !', {
             position: "top-right",
-            autoClose: 1500,
+            autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,

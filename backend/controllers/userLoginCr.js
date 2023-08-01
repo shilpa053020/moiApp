@@ -9,8 +9,7 @@ export const newuser = async (req,res)=>{
          const salt = bcrypt.genSaltSync(10);
          const hash = bcrypt.hashSync(req.body.PassWord, salt);
          const newlog = new userlogin({
-
-            User_Id:req.body.User_Id,
+            
             Name:req.body.Name,
             PassWord:hash
         })
@@ -20,7 +19,7 @@ export const newuser = async (req,res)=>{
         console.log("created new user");
         res.status(200).send("new user created successfully")
         }catch(err){
-            res.status(404).json("Something Went Wrong")
+            res.status(404).json("UserName Is Already Existed ")
         }
 
 }

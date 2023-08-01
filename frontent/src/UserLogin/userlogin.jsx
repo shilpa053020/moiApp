@@ -41,9 +41,9 @@ const Login= () =>{
        
        })
       .catch((err) => { 
-        toast.error('🦄 Please Try Again !', {
+        toast.error('🦄  UserName is Already Existed Please Try Again !', {
           position: "top-right",
-          autoClose: 1500,
+          autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -65,7 +65,7 @@ const Login= () =>{
   axios.post("http://localhost:5000/Moi/login",data)
   
   .then((result) => {
-     if(result.data){
+    console.log(result);
       toast("🦄 Userlogin Successfully!", {
         position: "top-right",
         autoClose: 1500,
@@ -77,16 +77,15 @@ const Login= () =>{
         theme: "dark",
        
         } );
+    
       navigate("/dash")
-                   
-    }
-
+                 
   })
   .catch((err) => { 
-  
+    console.log(err);
     toast.error('🦄 UserName or Password Wrong!', {
       position: "top-right",
-      autoClose: 1500,
+      autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
