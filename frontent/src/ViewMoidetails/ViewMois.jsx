@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState ,useRef} from 'react'
 import { useLocation } from 'react-router-dom'
 import axios from "axios"
+import {DownloadTableExcel} from "react-export-table-to-excel"
+import "./Viewmois.css"
 
 const ViewMois = () => {
+    const tableRef = useRef(null);
     const uselocation = useLocation();
     console.log(uselocation.state.function_id);
     const [data, setmois] = useState([])
@@ -16,13 +19,25 @@ const ViewMois = () => {
             }).catch((err) => {
                 console.log(err);
             })
-    }, [])
+    },[])
     return (
         <div>
-           
-            <table class="table table-bordered container" >
+        <DownloadTableExcel
+            filename={uselocation.state.BrideGroomsandBrideName}
+            sheet="users"
+            currentTableRef={tableRef.current}
+        >
+
+        <button class="btn btn-primary excel"> Export excel </button>
+
+        </DownloadTableExcel>
+
+        
+        <div class="table-container3" >
+            
+            <table class="ttr table-container4" ref={tableRef}>
             <thead>
-                <tr> <th >{uselocation.state.BrideGroomsandBrideName}</th></tr>
+                <tr> <th>{uselocation.state.BrideGroomsandBrideName}</th></tr>
                 <tr>
                     <th scope="col">S.No</th>
                     <th scope="col">Name</th>
@@ -43,13 +58,15 @@ const ViewMois = () => {
                         </tr>
                     ))
                 ) : (
-                    <tr>No Payment Made</tr>
+                    <tr class="nodata">No Payment Made</tr>
                 )}
             </tbody>
 
 
         </table></div>
+        </div>
+      
     )
 }
 
-export default ViewMois
+export default ViewMois;
