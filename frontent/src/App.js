@@ -8,12 +8,12 @@ import Function from "./Function/function.jsx";
 import Userlog from "./UserLogin/userlogin.jsx";
 import {ToastContainer} from "react-toastify"
 import Table from "./FunctionTable/table.jsx";
-import ViewMois from "./Report/ViewMois.jsx";
+import ViewMois from "./ViewMoidetails/ViewMois.jsx";
 
 
 const App=()=>{
   return(
-   
+
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Userlog/>}/>
@@ -36,6 +36,7 @@ const App=()=>{
         pauseOnHover
         theme="dark"/>
     </BrowserRouter>
+    
    
   )
 }
