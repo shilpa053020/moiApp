@@ -1,7 +1,7 @@
 import React, { useEffect, useState ,useRef} from 'react'
 import { useLocation } from 'react-router-dom'
 import axios from "axios"
-import {DownloadTableExcel} from "react-export-table-to-excel"
+import {useDownloadExcel} from "react-export-table-to-excel"
 import "./Viewmois.css"
 
 const ViewMois = () => {
@@ -20,19 +20,17 @@ const ViewMois = () => {
                 console.log(err);
             })
     },[])
+
+    const { onDownload } = useDownloadExcel({
+        currentTableRef: tableRef.current,
+        filename:"Moi Payment Details",
+        sheet: 'Users'
+    })
+
     return (
         <div>
-        <DownloadTableExcel
-            filename={uselocation.state.BrideGroomsandBrideName}
-            sheet="users"
-            currentTableRef={tableRef.current}
-        >
-
-        <button class="btn btn-primary excel"> Export excel </button>
-
-        </DownloadTableExcel>
-
-        
+          <button class="btn btn-primary excel" onClick={onDownload}> Export excel </button>
+                         
         <div class="table-container3" >
             
             <table class="ttr table-container4" ref={tableRef}>
