@@ -1,4 +1,5 @@
 import React from "react";
+import {ToastContainer} from "react-toastify"
 
 import {BrowserRouter,Routes, Route} from "react-router-dom";
 import CreateFunc from "./PayMoidetails/paymoidetails.jsx";
@@ -6,7 +7,6 @@ import Dash from "./DashBoard/dashboard.jsx";
 import Report from "./Report/report.jsx"
 import Function from "./Function/function.jsx";
 import Userlog from "./UserLogin/userlogin.jsx";
-import {ToastContainer} from "react-toastify"
 import Table from "./FunctionTable/table.jsx";
 import ViewMois from "./ViewMoidetails/ViewMois.jsx";
 

@@ -33,14 +33,18 @@ export const getall = async(req,res)=>{
 
 
 export const login =  async(req,res)=>{
+   
     try{
      const user = await userlogin.findOne({ Name:req.body.Name})
-     if (!user) return res.status(200).json(false)
+     if (!user) return res.status(404).json(false)
     const isPasswordCorrect = await bcrypt.compare(
             req.body.PassWord,
             user.PassWord  
     );
     
+
+
+
      if(!isPasswordCorrect) return res.status(403).json("Wrong Password")
     return res.status(200).json(true)
     

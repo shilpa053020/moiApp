@@ -26,15 +26,7 @@ const Login= () =>{
       .then((result) => {
          if(result.data){
           toast("🦄 Userlogin Created Successfully", {
-            position: "top-right",
-            autoClose: 1500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
-            } );
+          } );
           navigate("/dash")
                  
         }
