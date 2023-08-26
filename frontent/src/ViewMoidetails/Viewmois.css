@@ -1,0 +1,83 @@
+
+.ttc{
+
+   text-align: center;
+}
+
+table.ttr{
+
+    margin: 0 auto;
+    height: 300px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.table-container3 table td,
+.table-container3 table th {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+
+
+}
+
+
+.table-container3 table th{
+    color:yellow;
+    font-size: 25px;
+    margin:auto;
+    align-items: center;
+ 
+
+}
+
+
+
+
+.table-container4{
+    background:url(sart.jpg);
+    background-size: cover; /* Adjust as needed to control image sizing */
+    background-repeat: no-repeat;
+    width: 200%;
+    max-width: 800px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    box-shadow: 5px 10px 15px #ccc;
+    overflow: hidden;
+}
+
+.table-container3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+button.excel{
+  
+
+    align-items: center;
+    height: 100%; 
+    width: 10em;
+   
+  
+    background-color:darkblue;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px solid darkblue;
+    box-shadow: 1px 2px 3px whitesmoke;
+    margin-left: 440px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+
+}
+.nodata{
+    color:white
+}
+
+
+
+
+

@@ -1,0 +1,92 @@
+
+h3.tab3{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; 
+    text-align: center;
+}
+
+button.create5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 15em;
+    font-size: 1em;
+    margin: auto;
+    /* background-color:#F58F29; */
+    background-color:gold;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 5px solid gold;
+    box-shadow: 1px 2px 3px whitesmoke;
+    transition: font-size 0.3s ease;
+}
+
+button.create5:hover{
+    font-size: 2em;
+}
+
+table.ttb{
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+
+.table-container1 table td,
+.table-container1 table th {
+
+  color:white;
+   /* Change this to the appropriate text color for better visibility inside the table cells */
+  border-color: white;
+ 
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.table-container1 table th{
+    color:gold;
+    
+    font-size: 2em;
+}
+
+
+button.create6{
+  color:#F7F4EA;
+  padding: 10px 50px; 
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 15px;
+  border: 5px solid #fff;
+  box-shadow: 1px 2px 3px #fff;
+  transition: font-size 0.3s ease;
+ 
+ 
+}
+
+button.create6:hover{
+  font-size: 24px;
+  
+}
+.table-container2 {
+    background:url(sart.jpg);
+    background-size:cover; /* Adjust as needed to control image sizing */
+    background-repeat: no-repeat;
+    width: 200%;
+    max-width: 800px;
+   
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 1.5px solid #ccc;
+    box-shadow: 2.5px 5px 7.5px #ccc;
+    overflow: hidden;
+  }
+  .table-container1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+

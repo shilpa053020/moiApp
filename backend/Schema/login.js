@@ -1,19 +1,25 @@
 import mongoose from "mongoose";
+import autoIncrement from "mongoose-auto-increment";
 
 const userlogin = new mongoose.Schema({
-    User_Id:{
-        type:Number,
-        required:true
+
+    Name: {
+        type: String,
+        required: true,
+        unique: true,
     },
-    Name:{
-        type:"string",
-        required:true
-    },
-    PassWord:{
-        type:"string",
-        required:true
-    },
-    
+    PassWord: {
+        type: String,
+        required: true
+    }
 })
 
-export default mongoose.model("loginschema",userlogin);
+autoIncrement.initialize(mongoose.connection);
+userlogin.plugin(autoIncrement.plugin, {
+    model: "Userlogin",
+    field: "_id",
+    startAt: 101,
+    incrementBy: 1,
+})
+
+export default mongoose.model("loginschema", userlogin);

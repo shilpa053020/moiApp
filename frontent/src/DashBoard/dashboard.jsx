@@ -1,16 +1,27 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./dashboard.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const dashboard = () => {
+const DashBoard = () => {
+  const navigate = useNavigate()
+
+  const dashNav = () => {
+    navigate("/table")
+  }
+  
+  const ReportNav = () => {
+    navigate("/report")
+  }
+
   return (
-    <div class="row">
-    <div class="col-sm-4">
-        <button  className="button">
-            <img className="image" alt="add student" />
-        </button>
-        <p className="para"> Add Student </p>
-    </div>
+    <div className="container1">
+      <div class="background-wrapper">
+        <button className="btn btn-primary btn-block btn1" onClick={dashNav}>FUNCTION</button>
+        <button className="btn btn-primary btn-block btn1" onClick={ReportNav}>REPORT</button>
+      </div>
     </div>
   )
 }
 
-export default dashboard
+export default DashBoard;

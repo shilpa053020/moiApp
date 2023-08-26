@@ -1,0 +1,79 @@
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    
+}
+
+.text0{
+    font-weight: bolder;
+    color:black;
+    padding: 25px;
+}
+
+
+.in0{
+    font-size: 20px;
+    color:black;
+}
+
+div.form1{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+input.in1{
+    
+    font-size: 25px;
+    width: 800px;
+    padding: 10px 40px;
+    box-sizing: border-box; /* Include padding within the specified width */
+
+}
+
+input.in1:focus{
+    color: #3B3B3B;
+}
+
+button.create1{
+ background: #ffc107; 
+ border: none;
+ font-size: 25px;
+ font-weight: bolder;
+ padding: 10px;
+ box-shadow: 1px 1px 1px #ccc;
+ border-radius: 10px;
+ transition: font-size 0.3s ease;
+}
+
+button.create1:hover{
+    font-size: 29px;
+}
+
+.background-color1{
+    
+   
+    width: 100%;
+    height: 300px; /* Set the desired height for the container */
+    background-image: url(gems.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #ccc;
+    border: #ccc;
+    font-weight: bold;
+    
+   
+}
+
+
+
+
+
