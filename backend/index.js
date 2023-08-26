@@ -6,6 +6,7 @@ import routes from "./Routes/Routes.js"
 dotenv.config();
 const app = express();
 
+// middleware
 app.use(cors());
 app.use(express.json());
 app.use("/Moi", routes)
