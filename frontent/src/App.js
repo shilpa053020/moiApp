@@ -1,6 +1,5 @@
 import React from "react";
 import {ToastContainer} from "react-toastify"
-
 import {BrowserRouter,Routes, Route} from "react-router-dom";
 import CreateFunc from "./PayMoidetails/paymoidetails.jsx";
 import Dash from "./DashBoard/dashboard.jsx";
@@ -10,10 +9,8 @@ import Userlog from "./UserLogin/userlogin.jsx";
 import Table from "./FunctionTable/table.jsx";
 import ViewMois from "./ViewMoidetails/ViewMois.jsx";
 
-
 const App=()=>{
   return(
-
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Userlog/>}/>
@@ -23,7 +20,6 @@ const App=()=>{
       <Route path="/report" element={<Report/>}/>
       <Route path="/table" element={<Table/>}/>
       <Route path="/Viewmoi" element={<ViewMois/>}/>
-      
       </Routes>
     <ToastContainer  position="top-right"
         autoClose={1500}
@@ -36,8 +32,6 @@ const App=()=>{
         pauseOnHover
         theme="dark"/>
     </BrowserRouter>
-    
-   
   )
 }
 
